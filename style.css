@@ -1,0 +1,15 @@
+
+h1, h2, h3, h4 {
+    color: #3454d0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    
+}
+
+p, li {
+    color: #363732;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
