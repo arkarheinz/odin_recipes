@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Odin Recipes</title>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="./recipes/ramen.html" target="_blank" rel="noopener noreferrer">Ramen</a></li>
-        <li><a href="./recipes/egg_fried_rice.html" target="_blank" rel="noopener noreferrer">Egg fried rice</a></li>
-        <li><a href="./recipes/mexican_shrimp_cocktail.html" target="_blank" rel="noopener noreferrer">Mexican shrimp cocktail</a></li>
-    </ul>
+    <div class="flex-container">
+        <div class="info">
+        <div class="box">
+            <h1 id="heading">Odin Recipes</h1>
+            <div class="choices">
+                <button id="ramen"><a href="./recipes/ramen.html" target="_blank" rel="noopener noreferrer">Ramen</a></button>
+                <button id="egg_fried_rice"><a href="./recipes/egg_fried_rice.html" target="_blank" rel="noopener noreferrer">Egg fried rice</a></button>
+                <button id="mexican"><a href="./recipes/mexican_shrimp_cocktail.html" target="_blank" rel="noopener noreferrer">Mexican shrimp cocktail</a></button>
+            </div>
+            <div class="another">
+                <a href="">Sign In</a>
+                <a href="">Forgot password?</a>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
