@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    background-image: url(../images/egg_fried_rice/egg-frief-rice.png);
+    color: #FFCA3A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+
+    padding-left: 80px;
+    padding-top: 90px;
+    padding-bottom: 150px;
+
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.dish img {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 500px;
+    margin-top: -30px;
+}
+
+.description {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.description h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #F24236;
+}
+
+.description .ingredients {
+    display: flex;
+    color: #2A2B2A;
+    margin-top: 20px;
+}
+
+.description .ingredients h3 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.description .ingredients ul {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+
+    margin-left: 30px;
+    margin-top: 12px;
+}
+
+.line {
+    background: #F24236;
+    width: 600px;
+    height: 10px;
+    margin-top: 50px;
+}
+
+.directions h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #F24236;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.steps {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.steps img {
+    width: 300px;
+    height: auto;
+}
+
+.step_1,.step_2,.step_3 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+    text-align: center;
+}
+
+.steps h3 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #F24236;
+    margin-top: 30px;
+}
+
+.steps p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #2A2B2A;
+
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #F24236;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer img {
+    width: 40px;
+    height: auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.footer .linkedin {
+    padding: 35px 50px;
+    display: flex;
+    align-items: center;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.footer .email {
+    padding: 35px 25px;
+    display: flex;
+    align-items: center;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.footer .facebook {
+    padding: 35px 50px;
+    display: flex;
+    align-items: center;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
