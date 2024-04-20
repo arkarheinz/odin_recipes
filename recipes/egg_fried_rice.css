@@ -61,10 +61,14 @@
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 14px;
 
     margin-left: 30px;
     margin-top: 12px;
+}
+
+.description .ingredients li {
+    line-height: 20px;
 }
 
 .line {
@@ -111,7 +115,7 @@
     font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
     color: #F24236;
     margin-top: 30px;
 }
@@ -120,11 +124,12 @@
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px;
+    font-size: 14px;
     color: #2A2B2A;
 
     margin-top: 15px;
     justify-content: center;
+    line-height: 20px;
 }
 
 .footer {
