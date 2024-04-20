@@ -2,105 +2,273 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*overflow: hidden;*/ /* this property and value is to make web page not to move anywhere */
 }
 
-.flex-container {
-    background-color: rgb(228, 57, 45);
-    margin: 200px 500px;
-    width: 500px;
-    height: auto;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0 30px 0;
-}
-
-#heading {
-    color: wheat;
-    text-align: center;
+.nav h1 {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
-    margin-bottom: 20px;
     font-size: 50px;
-}
-
-.box {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+
+    background-color: #F24236;
+    color: white;
+    padding: 40px 0;
 }
 
-#ramen {
-    background-color: #f5deb3;
-    text-decoration: none;
-    margin: 0 100px 10px 100px;
-    width: 250px;
-    height: 70px;
-    border-radius: 10px;
-}
+/* Start of hover line animation */
 
-#egg_fried_rice {
-    background-color: #f5deb3;
+.recipes a {
     text-decoration: none;
-    margin: 0 100px 10px 100px;
-    width: 250px;
-    height: 70px;
-    border-radius: 10px;
-}
-
-#mexican {
-    background-color: wheat;
-    text-decoration: none;
-    margin: 0 100px 20px 100px;
-    width: 250px;
-    height: 70px;
-    border-radius: 10px;
-}
-
-.choices a {
-    text-decoration: none;
-    color: #3e2a28;
-    display: flex;
-    flex-direction: column;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
+    color: #2A2B2A;
     position: relative;
 }
 
-.choices a::after {
+.recipes a::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(228, 57, 45);
+    background: #F24236;
 
     transform: scaleX(0);
-    transition: transform 250ms ease-in;
+    transform-origin: center;
+    transition: transform 150ms ease-in;
 }
 
-.choices #ramen a:hover::after {
-    transform: scaleX(.2);
+.recipes a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
 }
 
-.choices #egg_fried_rice a:hover::after {
-    transform: scaleX(.36);
-}
-
-.choices #mexican a:hover::after {
-    transform: scaleX(.65);
-}
-
-.another {
+.recipes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
 }
 
-.another a {
+.recipes #ramen {
+    margin-right: 50px;
+}
+
+.recipes #egg_fried_rice {
+    margin-left: 50px;
+}
+
+/* Start of ramen page */
+
+.ramen {
+    display: flex;
+    align-items: top;
+    margin-top: 20px;
+}
+
+.ramen_origin {
+    flex-direction: column;
+    width: 400px;
+    align-items: start;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.ramen_dish img {
+    position: relative;
+    width: 900px;
+    height: auto;
+    object-fit: contain;
+    transform: rotate(-10deg);
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#dish_ramen {
+    background-image: url(./images/main/ramen_texture.png);
+    max-width: 100%;
+    height: 500%;
+}
+
+.ramen_origin h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #F24236;
+}
+
+.ramen_origin p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #2A2B2A;
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.ramen_origin a {
+    color: #ffffff;
+    background-color: #F24236;
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
     text-decoration: none;
-    color: wheat;
+}
+
+.ramen_origin a:hover {
+    background-color: #2A2B2A;
+    color: #FFCA3A;
+}
+
+/* Start of Mexican shrimp cocktail */
+
+#dish_mexican {
+    background-image: url(./images/main/mexican_texture.png);
+    height: 600px;
+}
+
+.mexican {
+    display: flex;
+    align-items: top;
+}
+
+.mexican_dish img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+}
+
+.mexican_dish {
+    width: 600px;
+}
+
+.mexican_origin {
+    flex-direction: column;
+    width: 700px;
+    align-items: start;
+    margin-top: 80px;
+    margin-left: 700px;
+}
+
+.mexican_origin h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #F24236;
+}
+
+.mexican_origin p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #2A2B2A;
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.mexican_origin a {
+    color: #ffffff;
+    background-color: #F24236;
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.mexican_origin a:hover {
+    background-color: #2A2B2A;
+    color: #FFCA3A;
+}
+
+/* Egg fried rice page start here */
+
+.egg {
+    display: flex;
+    align-items: top;
+}
+
+.egg_origin {
+    flex-direction: column;
+    width: 400px;
+    align-items: start;
+    margin-left: 100px;
+    margin-top: 130px;
+}
+
+.egg_dish img {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#dish_egg {
+    background-image: url(./images/main/fried_rice_texture.png);
+    max-width: 100%;
+    height: 1000px;
+}
+
+.egg_origin h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #F24236;
+}
+
+.egg_origin p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #2A2B2A;
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.egg_origin a {
+    color: #ffffff;
+    background-color: #F24236;
+    margin-top: 50px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.egg_origin a:hover {
+    background-color: #2A2B2A;
+    color: #FFCA3A;
 }
