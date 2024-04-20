@@ -7,17 +7,19 @@
     <title>Odin Recipes</title>
 </head>
 <body>
+    <script src="script.js"></script>
     <header>
         <div class="nav">
+            <img src="./images/main/Odin.png" alt="odin_logo">
             <h1>Odin recipes</h1>
         </div>
     </header>
     <div class="dishes">
-        <div id="dish_ramen">
+        <div class="ramen_page dish ">
             <div class="recipes">
-                <a href="#dish_ramen" id="ramen">Ramen</a>
-                <a href="#dish_mexican" id="mexican">Mexican shrimp cocktail</a>
-                <a href="" id="egg_fried_rice">Egg fried rice</a>
+                <a href="#" id="ramen" onclick="togglePage('ramen_page')">Ramen</a>
+                <a href="#" id="mexican" onclick="togglePage('mexican_page')">Mexican shrimp cocktail</a>
+                <a href="#" id="egg_fried_rice" onclick="togglePage('egg_page')">Egg fried rice</a>
             </div>
             <div class="ramen">
                 <div class="ramen_origin">
@@ -30,7 +32,12 @@
                 </div>
             </div>
         </div>
-        <div id="dish_mexican">
+        <div class="mexican_page dish hidden">
+            <div class="recipes">
+                <a href="#" id="ramen" onclick="togglePage('ramen_page')">Ramen</a>
+                <a href="#" id="mexican" onclick="togglePage('mexican_page')">Mexican shrimp cocktail</a>
+                <a href="#" id="egg_fried_rice" onclick="togglePage('egg_page')">Egg fried rice</a>
+            </div>
             <div class="mexican_dish">
                 <img src="./images/main/fresh-cocktail-with-shrimps-vegetables-tomato-sauce-lime.png" alt="mexican_shrimp_cocktail">
             </div>
@@ -45,11 +52,11 @@
                 </div>
             </div>
         </div>
-        <div id="dish_egg">
+        <div class="egg_page dish hidden">
             <div class="recipes">
-                <a href="#dish_ramen" id="ramen">Ramen</a>
-                <a href="#dish_mexican" id="mexican">Mexican shrimp cocktail</a>
-                <a href="" id="egg_fried_rice">Egg fried rice</a>
+                <a href="#" id="ramen" onclick="togglePage('ramen_page')">Ramen</a>
+                <a href="#" id="mexican" onclick="togglePage('mexican_page')">Mexican shrimp cocktail</a>
+                <a href="#" id="egg_fried_rice" onclick="togglePage('egg_page')">Egg fried rice</a>
             </div>
             <div class="egg">
                 <div class="egg_origin">

@@ -2,19 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*overflow: hidden;*/ /* this property and value is to make web page not to move anywhere */
+}
+
+body {
+    overflow: hidden; /* this property and value is to make web page not to move anywhere */
+}
+
+.nav {
+    background-color: #F24236;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav img {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
 }
 
 .nav h1 {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    text-align: center;
-
-    background-color: #F24236;
-    color: white;
-    padding: 40px 0;
+    font-size: 30px;
+    padding-left: 10px;
 }
 
 /* Start of hover line animation */
@@ -64,6 +78,26 @@
     margin-left: 50px;
 }
 
+/* hiding div elements and show exact one */
+
+
+/* Display and hide content based on the page class */
+
+.dish {
+    display: none;
+}
+
+.dish.ramen_page,
+.dish.mexican_page,
+.dish.egg_page {
+    display: block;
+}
+
+.dish.hidden {
+    display: none;
+}
+
+
 /* Start of ramen page */
 
 .ramen {
@@ -73,11 +107,12 @@
 }
 
 .ramen_origin {
+    display: flex;
     flex-direction: column;
     width: 400px;
     align-items: start;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .ramen_dish img {
@@ -90,7 +125,7 @@
     margin-top: 30px;
 }
 
-#dish_ramen {
+.ramen_page {
     background-image: url(./images/main/ramen_texture.png);
     max-width: 100%;
     height: 500%;
@@ -112,14 +147,13 @@
     color: #2A2B2A;
     text-align: justify;
     line-height: 22px;
-    margin-bottom: 40px;
     margin-top: 10px;
 }
 
 .ramen_origin a {
     color: #ffffff;
     background-color: #F24236;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px 40px;
     border-radius: 10px;
     
@@ -137,9 +171,9 @@
 
 /* Start of Mexican shrimp cocktail */
 
-#dish_mexican {
+.mexican_page {
     background-image: url(./images/main/mexican_texture.png);
-    height: 600px;
+    height: 1000px;
 }
 
 .mexican {
@@ -158,10 +192,12 @@
 }
 
 .mexican_origin {
+    display: flex;
     flex-direction: column;
     width: 700px;
+    height: auto;
     align-items: start;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 700px;
 }
 
@@ -181,14 +217,13 @@
     color: #2A2B2A;
     text-align: justify;
     line-height: 22px;
-    margin-bottom: 40px;
     margin-top: 10px;
 }
 
 .mexican_origin a {
     color: #ffffff;
     background-color: #F24236;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px 40px;
     border-radius: 10px;
     
@@ -212,11 +247,12 @@
 }
 
 .egg_origin {
+    display: flex;
     flex-direction: column;
     width: 400px;
     align-items: start;
     margin-left: 100px;
-    margin-top: 130px;
+    margin-top: 150px;
 }
 
 .egg_dish img {
@@ -228,7 +264,7 @@
     margin-top: 30px;
 }
 
-#dish_egg {
+.egg_page {
     background-image: url(./images/main/fried_rice_texture.png);
     max-width: 100%;
     height: 1000px;
@@ -250,14 +286,13 @@
     color: #2A2B2A;
     text-align: justify;
     line-height: 22px;
-    margin-bottom: 40px;
     margin-top: 10px;
 }
 
 .egg_origin a {
     color: #ffffff;
     background-color: #F24236;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px 40px;
     border-radius: 10px;
     
