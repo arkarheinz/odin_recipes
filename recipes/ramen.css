@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: #F24236;
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 40px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav .logo h1 {
+    color: white;
+    margin-left: 10px;
+}
+
+.nav .menu img {
+    width: 50px;
+    height: auto;
+    margin-left: 1150px;
+}
+
+
+
