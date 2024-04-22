@@ -34,8 +34,227 @@
 .nav .menu img {
     width: 50px;
     height: auto;
-    margin-left: 1150px;
+    margin-left: 1100px;
 }
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+p,
+li {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #2A2B2A;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.main {
+    background-image: url(../images/ramen/ramen_texture.png);
+    padding-top: 50px;
+}
+
+.main .intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.main .intro img {
+    width: 850px;
+}
+
+.main .intro .intro_text {
+    position: absolute;
+    margin-left: 712px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+}
+
+.main .intro .intro_text h2 {
+    font-size: 100px;
+    color: #F24236;
+    margin-bottom: 15px;
+}
+
+.main .description {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main .description .raw_chicken {
+    width: 531px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+
+.main .description h3 {
+    color: #F24236;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.main .description h4 {
+    color: #2A2B2A;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main .description .broth {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main .description .broth .broth_text h5 {
+    color: #2A2B2A;
+    margin-bottom: 20px;
+}
+
+.broth_list {
+    display: flex;
+}
+
+.list_1 {
+    margin-left: 15px;
+}
+
+.list_2 {
+    margin-left: 95px;
+}
+
+.tare_sauce {
+    display: flex;
+    position: relative;
+}
+
+.tare_sauce img {
+    width: 661px;
+    height: auto;
+    position: absolute;
+    left: -60px;
+    top: 0;
+}
+
+.tare_sauce .tare_sauce_text {
+    margin-left: 652px;
+    margin-top: 70px;
+}
+
+.tare_sauce .tare_sauce_text h5 {
+    color: #2A2B2A;
+    margin-bottom: 20px;
+}
+
+.tare_sauce_list {
+    display: flex;
+}
+
+.directions {
+    background-color: #F24236;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 100px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+.directions .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rec {
+    background-color: white;
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.directions h3 {
+    color: white;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 100px;
+}
+
+.step {
+    width: 500px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.step h5 {
+    color: white;
+}
+
+.step p {
+    margin-top: 15px;
+    color: white;
+}
+
+.early_steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    margin-bottom: 100px;
+}
+
+.steps .early_steps img {
+    width: 712px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.main_steps {
+    display: flex;
+    flex-direction: row;
+}
+
+.steps .main_steps img {
+    width: 712px;
+    height: auto;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
 
 
 
