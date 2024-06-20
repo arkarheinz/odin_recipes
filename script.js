@@ -8,3 +8,5 @@ function togglePage(page) {
     var currentPage = document.querySelector('.' + page);
     currentPage.classList.remove('hidden');
 }
+
+const div = document.createElement("div");
